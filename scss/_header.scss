@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  width: 718px;
+  position: fixed;
+  padding: 68px 0 0 78px;
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+  font-family: Roboto Mono for Powerline, Regular;
+}
+
+.nav {
+
+  ul {
+    display: flex;
+    // justify-content: space-between;
+  }
+  
+
+  li {
+    font-size: 1.6rem;
+    margin-left: 20px;
+    color: $fcGray;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+      border-bottom: 1px solid;
+    }
+  }
+}
