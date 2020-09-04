@@ -1,0 +1,38 @@
+#concept {
+  background: linear-gradient(#A193861F 0% 50%, #D0C5BA 50% 100%);
+
+}
+
+.concept-wrap {
+  width: 85%;
+}
+
+.concept-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.concept-intro {
+
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  margin-top: 70px;
+
+  &__title {
+    font-size: 4.0rem;
+    width: 45%;
+    line-height: 68px;
+    letter-spacing: 16px;
+    font-family: ヒラギノ明朝 Pro, W3;
+    
+    
+  }
+
+  &__desc {
+    width: 50%;
+    line-height: 27px;
+    letter-spacing: 1.6px;
+    font-family: ヒラギノ角ゴ Pro, W3;
+  }
+}
