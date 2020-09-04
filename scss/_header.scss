@@ -1,10 +1,10 @@
 header {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   width: 718px;
-  position: fixed;
+  position: absolute;
   padding: 68px 0 0 78px;
+  z-index: 10;
 }
 
 .hd-logo {
@@ -16,7 +16,6 @@ header {
 
   ul {
     display: flex;
-    // justify-content: space-between;
   }
   
 

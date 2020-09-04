@@ -1,0 +1,40 @@
+#first-view {
+  height: 800px;
+  display: flex;
+}
+
+.fv-box {
+
+  &__title {
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    position: relative;
+  }
+
+  &__img {
+    height: 100%;
+    width: 50%;
+    background-image: url(../img/blond-woman.png);
+    background-size: cover;
+  }
+}
+
+.fv-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__1 {
+    font-family: ヒラギノ明朝 Pro, W3;
+    font-size: 3.8rem;
+    line-height: 65px;
+  }
+
+  &__2 {
+    font-family: Zapfino, Regular;
+    font-size: 3.8rem;
+    line-height: 128px;
+  }
+}

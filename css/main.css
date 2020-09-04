@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -122,8 +123,9 @@ header {
   display: flex;
   align-items: center;
   width: 718px;
-  position: fixed;
+  position: absolute;
   padding: 68px 0 0 78px;
+  z-index: 10;
 }
 
 .hd-logo {
@@ -145,5 +147,43 @@ header {
 .nav li:hover {
   color: black;
   border-bottom: 1px solid;
+}
+
+#first-view {
+  height: 800px;
+  display: flex;
+}
+
+.fv-box__title {
+  height: 100%;
+  width: 50%;
+  background-color: #fff;
+  position: relative;
+}
+
+.fv-box__img {
+  height: 100%;
+  width: 50%;
+  background-image: url(../img/blond-woman.png);
+  background-size: cover;
+}
+
+.fv-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fv-title__1 {
+  font-family: ヒラギノ明朝 Pro, W3;
+  font-size: 3.8rem;
+  line-height: 65px;
+}
+
+.fv-title__2 {
+  font-family: Zapfino, Regular;
+  font-size: 3.8rem;
+  line-height: 128px;
 }
 /*# sourceMappingURL=main.css.map */
