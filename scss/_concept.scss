@@ -1,15 +1,67 @@
 #concept {
   background: linear-gradient(#A193861F 0% 50%, #D0C5BA 50% 100%);
 
+  @include sp {
+    background: linear-gradient(#A193861F 0% 18%, #D0C5BA 18% 100%);
+  }
+
 }
 
 .concept-wrap {
   width: 85%;
+
+  @include tab {
+    width: 93%;
+  }
 }
 
 .concept-img {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  &__1 {
+    width: 70%;
+    overflow:hidden;
+  }
+
+  &__2 {
+    width: 30%;
+    overflow: hidden;
+  }
+
+  @include tab {
+    &__1 {
+      img {
+        transform: translate(-20%);
+      }
+    }
+
+    &__2 {
+      img {
+        transform: translate(-20%);
+      }
+    }
+
+  }
+
+  @include sp{
+    &__1, &__2 {
+      width: 48%;
+      max-height: 205px;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &__1 {
+      img {
+        transform: translate(-50%);
+      }
+    }
+  }
+  
 }
 
 .concept-intro {
@@ -19,12 +71,23 @@
   display: flex;
   margin-top: 70px;
 
+  @include tab {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
   &__title {
     font-size: 4.0rem;
     width: 45%;
     line-height: 68px;
     letter-spacing: 16px;
     font-family: ヒラギノ明朝 Pro, W3;
+
+    @include tab {
+      width: 100%;
+      font-size: 1.8rem;
+      line-height: 31px;
+    }
     
     
   }
@@ -34,5 +97,10 @@
     line-height: 27px;
     letter-spacing: 1.6px;
     font-family: ヒラギノ角ゴ Pro, W3;
+
+    @include tab {
+      width: 100%;
+      margin-top: 18px;
+    }
   }
 }

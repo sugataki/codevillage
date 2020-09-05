@@ -1,11 +1,21 @@
 #access {
   height: 757px;
   background-color: $bgcPink;
+
+  @include tab {
+    height: 710px;
+    // box-sizing: border-box;
+  }
 }
 
 .access-title {
   width: 85%;
   margin: 0 auto;
+
+  @include tab {
+    width: 90%;
+    margin: 0 auto 50px;
+  }
 }
 
 .access-address {
@@ -14,12 +24,26 @@
   height: 396px;
   background-color: $bgcGray;
 
+  @include tab {
+    flex-direction: column-reverse;
+    height: 513px;
+  }
+
   &__text {
     width: 40%;
+
+    @include tab {
+      width: 100%;
+      height: 50%;
+    }
 
     .inner {
       width: 63%;
       margin: 0 auto;
+
+      @include tab {
+        width: 90%;
+      }
     }
 
     h3 {
@@ -28,6 +52,10 @@
       line-height: 29px;
       font-weight: bold;
       margin-top: 100px;
+
+      @include tab {
+        margin-top: 30px;
+      }
     }
 
     li {
@@ -45,5 +73,10 @@
 
   &__map {
     width: 60%;
+
+    @include tab {
+      width: 100%;
+      height: 50%;
+    }
   }
 }
