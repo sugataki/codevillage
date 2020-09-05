@@ -277,4 +277,54 @@ header {
   text-align: right;
   margin-top: 34px;
 }
+
+#access {
+  height: 757px;
+  background-color: #A193861F;
+}
+
+.access-title {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.access-address {
+  display: flex;
+  justify-content: space-between;
+  height: 396px;
+  background-color: #D0C5BA;
+}
+
+.access-address__text {
+  width: 40%;
+}
+
+.access-address__text .inner {
+  width: 63%;
+  margin: 0 auto;
+}
+
+.access-address__text h3 {
+  font-size: 2.4rem;
+  color: #00000038;
+  line-height: 29px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.access-address__text li {
+  color: white;
+}
+
+.access-address__text li:first-child {
+  margin-top: 30px;
+}
+
+.access-address__text li:not(:first-child) {
+  margin-top: 24px;
+}
+
+.access-address__map {
+  width: 60%;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,49 @@
+#access {
+  height: 757px;
+  background-color: $bgcPink;
+}
+
+.access-title {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.access-address {
+  display: flex;
+  justify-content: space-between;
+  height: 396px;
+  background-color: $bgcGray;
+
+  &__text {
+    width: 40%;
+
+    .inner {
+      width: 63%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      color: #00000038;
+      line-height: 29px;
+      font-weight: bold;
+      margin-top: 100px;
+    }
+
+    li {
+      color: white;
+
+      &:first-child {
+        margin-top: 30px;
+      }
+
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__map {
+    width: 60%;
+  }
+}
