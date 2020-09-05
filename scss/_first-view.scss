@@ -7,14 +7,14 @@
 
   &__title {
     height: 100%;
-    width: 50%;
+    width: 48%;
     background-color: #fff;
     position: relative;
   }
 
   &__img {
     height: 100%;
-    width: 50%;
+    width: 52%;
     background-image: url(../img/blond-woman.png);
     background-size: cover;
   }
@@ -30,6 +30,7 @@
     font-family: ヒラギノ明朝 Pro, W3;
     font-size: 3.8rem;
     line-height: 65px;
+    white-space: nowrap;
   }
 
   &__2 {

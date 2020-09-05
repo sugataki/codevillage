@@ -145,7 +145,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  width: 718px;
+  width: 800px;
   position: absolute;
   padding: 68px 0 0 78px;
   z-index: 10;
@@ -153,6 +153,7 @@ header {
 
 .hd-logo {
   font-size: 3.8rem;
+  letter-spacing: 3.8px;
   font-family: Roboto Mono for Powerline, Regular;
 }
 
@@ -162,6 +163,7 @@ header {
 
 .nav li {
   font-size: 1.6rem;
+  letter-spacing: 1.8px;
   margin-left: 20px;
   color: #707070;
   cursor: pointer;
@@ -179,14 +181,14 @@ header {
 
 .fv-box__title {
   height: 100%;
-  width: 50%;
+  width: 48%;
   background-color: #fff;
   position: relative;
 }
 
 .fv-box__img {
   height: 100%;
-  width: 50%;
+  width: 52%;
   background-image: url(../img/blond-woman.png);
   background-size: cover;
 }
@@ -202,6 +204,7 @@ header {
   font-family: ヒラギノ明朝 Pro, W3;
   font-size: 3.8rem;
   line-height: 65px;
+  white-space: nowrap;
 }
 
 .fv-title__2 {
@@ -326,5 +329,55 @@ header {
 
 .access-address__map {
   width: 60%;
+}
+
+footer {
+  height: 342px;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  border: 1px solid #70707036;
+}
+
+.footer-inner {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-logo__text {
+  color: #7070704D;
+  font-size: 3.2rem;
+  line-height: 32px;
+  margin-right: 26px;
+}
+
+.footer-logo__icon {
+  font-size: 2.0rem;
+}
+
+.footer-logo__icon .twitter {
+  margin-right: 6px;
+}
+
+.reserve-btn {
+  font-size: 1.8rem;
+  color: #707070;
+  border: 1px solid #707070;
+  padding: 10px 40px;
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */
